@@ -1,5 +1,6 @@
 <script>
   import Header from "$lib/components/Header.svelte";
+  import Footer from "$lib/components/Footer.svelte";
   import PointSystem from "$lib/components/PointSystem.svelte";
   import Form from "$lib/components/Form.svelte";
   import InputSize from "$lib/components/InputSize.svelte";
@@ -37,6 +38,7 @@
     </div>
     <Form />
   </main>
+  <Footer/>
 </div>
 
 <style>
