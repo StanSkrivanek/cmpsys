@@ -1,0 +1,21 @@
+:root {
+  --col-text-main: #2c3e50;
+  --col-text-sec: #99a3ba;
+  --col-text-placeholder: #cbd1dc;
+  --col-bg-gray: #cdd9ed;
+  --col-bg-sec: #eef4ff;
+  --col-disabled: #f1f1f1;
+  --col-info: #00bcd4;
+  --col-success: #8fffb4;
+  --col-warning: #ffc107;
+  --col-danger: #ff5a5f;
+  --col-active: #678efe;
+  --col-white: #fff;
+}
+
+* {
+  box-sizing: border-box;
+}
+body{
+  color: var(--col-text-main);
+}
