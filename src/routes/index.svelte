@@ -29,7 +29,6 @@
     <Toast {toastMessage} {toastType} />
   {/if}
   <Header />
-
   <main>
     <div class="f-wrapper">
       <PointSystem />

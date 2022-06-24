@@ -16,12 +16,14 @@
 
   $: if (sizes.length > 0 && Object.keys(data).length > 3) {
     isReady = true;
+  } else {
+    isReady = false;
   }
+ 
 
   $: data = $prefixObjArr;
   $: sizes = $sizesStore;
   $: pfxCss = getObjKeysValue(data);
-
 
   function toggleVisibility() {
     $isVisualHidden = !$isVisualHidden;
@@ -313,6 +315,7 @@
         on:click={() => {
           populate = false;
           clearData = true;
+          isReady = false;
           setTimeout(() => {
             clearData = false;
           }, 100);

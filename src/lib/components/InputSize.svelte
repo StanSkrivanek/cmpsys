@@ -6,7 +6,6 @@
   let showAlert = false;
   let charCodeNum = null;
 
-
   $: if ($pointSys.pointSystem === "1") {
     $sizesStore = ps8;
   } else if ($pointSys.pointSystem === "2") {
@@ -35,7 +34,6 @@
       showAlert = true;
     }
   }
-
 </script>
 
 <div class="container">
@@ -55,7 +53,6 @@
           bind:value={$sizesStore}
           on:keyup={isNumber}
         />
-
       </div>
     </div>
     <div class="input-heading danger">
@@ -147,7 +144,7 @@
     border: 1px solid var(--col-bg-gray);
     transition: background 0.3s ease, border 0.3s ease, color 0.3s ease;
   }
-.form-group:focus-within > span {
+  .form-group:focus-within > span {
     border-color: var(--col-active);
   }
 
@@ -155,7 +152,7 @@
     text-transform: uppercase;
   }
 
- .form-group .selected {
+  .form-group .selected {
     color: var(--col-white);
     background: var(--col-active);
   }
@@ -176,6 +173,6 @@
     font-size: 0.8rem;
   }
   .bg-alert {
-   background: var(--col-danger) !important;
+    background: var(--col-danger) !important;
   }
 </style>
